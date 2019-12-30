@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+}
+
+group 'Ersatz'
+version '1.1'
+
+sourceCompatibility = 1.8
+
+allprojects {
+    repositories {
+        mavenCentral()
+
+        maven {
+            url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+        }
+
+        maven {
+            url 'https://oss.sonatype.org/content/groups/public/'
+        }
+
+        maven {
+            url 'http://maven.sk89q.com/repo'
+        }
+
+        maven {
+            url 'https://repo.destroystokyo.com/repository/maven-public/'
+        }
+
+        maven {
+            url 'https://jitpack.io'
+        }
+
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+sourceCompatibility = 1.8
+
+
+dependencies {
+    implementation 'org.spigotmc:spigot-api:1.12.1-R0.1-SNAPSHOT'
+    implementation 'com.github.SkriptLang:Skript:master'
+    implementation 'com.github.Maximvdw:MVdWPlaceholderAPI:-SNAPSHOT'
+}

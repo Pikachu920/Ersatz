@@ -1,2 +1,2 @@
 # Ersatz
-PlaceholderAPI integration for Skript
+PlaceholderAPI and MVdWPlaceholderAPI integration for Skript
